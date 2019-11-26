@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User profile</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+       <h1>Edit your Profile</h1>
+        <h2>Give a new name</h2>
+      
+<form method="POST">
+
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit", class="btn btn-primary", value="Submit">
+    </div>
+</div>
+</form>
+</body>
+</html>
